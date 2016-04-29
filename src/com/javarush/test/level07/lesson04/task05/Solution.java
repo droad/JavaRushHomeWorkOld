@@ -27,5 +27,9 @@ public class Solution
             bigArray[i]=Integer.parseInt(reader.readLine());
 
 
+
+
+
+
     }
 }
