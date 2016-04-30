@@ -22,13 +22,24 @@ public class Solution
         int[] bigArray = new int[20];
         int[] smallArray1 = new int[10];
         int[] smallArray2 = new int[10];
+        int l = 0;
 
         for(int i =0; i<bigArray.length;i++)
             bigArray[i]=Integer.parseInt(reader.readLine());
 
+        for (int k=0;k<bigArray.length/2; k++){
+            smallArray1[k]=bigArray[k];
+        }
+
+        for (int n=bigArray.length/2;n<bigArray.length;n++){
+            smallArray2[l]=bigArray[n];
+            l++;
+        }
 
 
-
+        //вывод второго массива
+        for(int m = 0;m<smallArray2.length;m++)
+            System.out.println(smallArray2[m]);
 
 
     }
