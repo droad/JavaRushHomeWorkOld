@@ -28,6 +28,13 @@ public class Solution
     public static HashMap<String, Cat> addCatsToMap(String[] cats)
     {
         //напишите тут ваш код
+        HashMap<String, Cat> map = new HashMap<>();
+        for(int i=0; i<cats.length; i++){
+            Cat cat = new Cat(cats[i]);
+            map.put(cats[i],cat);
+        }
+
+        return map;
 
     }
 
