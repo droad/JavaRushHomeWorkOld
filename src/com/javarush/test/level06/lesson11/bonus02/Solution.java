@@ -32,41 +32,53 @@ public class Solution
     public static void main(String[] args) throws IOException
     {
         BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
-
+        String grandpaName = reader.readLine();
+        Cat catGrandpa = new Cat(grandpaName);
+        String grandmaName = reader.readLine();
+        Cat catGrandma = new Cat (grandmaName);
+        String fatherName = reader.readLine();
+        Cat catFather = new Cat (fatherName, catGrandpa, null);
         String motherName = reader.readLine();
-        Cat catMother = new Cat(motherName);
-
+        Cat catMother = new Cat (motherName, null, catGrandma);
+        String sonName = reader.readLine();
+        Cat catSon = new Cat (sonName, catFather, catMother);
         String daughterName = reader.readLine();
-        Cat catDaughter = new Cat(daughterName, catMother);
-
+        Cat catDaughter = new Cat (daughterName, catFather, catMother);
+        //String daughterName = reader.readLine();
+        //Cat catDaughter = new Cat(daughterName, catMother);
+        System.out.println(catGrandpa);
+        System.out.println(catGrandma);
+        System.out.println(catFather);
         System.out.println(catMother);
+        System.out.println(catSon);
         System.out.println(catDaughter);
     }
-
     public static class Cat
     {
         private String name;
-        private Cat parent;
-
+        private Cat parent1;
+        private Cat parent2;
         Cat(String name)
         {
             this.name = name;
         }
-
-        Cat(String name, Cat parent)
+        Cat(String name, Cat parent1, Cat parent2)
         {
             this.name = name;
-            this.parent = parent;
+            this.parent1 = parent1;
+            this.parent2 = parent2;
         }
-
         @Override
         public String toString()
         {
-            if (parent == null)
-                return "Cat name is " + name + ", no mother ";
-            else
-                return "Cat name is " + name + ", mother is " + parent.name;
+            String value = "Cat name is "+name;
+            if (parent2 == null)
+                value += ", no mother";
+            else value += ", mother is " + parent2.name;
+            if (parent1 == null)
+                value += ", no father";
+            else value += ", father is " + parent1.name;
+            return(value);
         }
     }
-
 }
