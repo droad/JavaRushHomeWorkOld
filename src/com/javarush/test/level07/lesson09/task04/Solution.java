@@ -44,8 +44,8 @@ public class Solution
         //напишите тут ваш код
         ArrayList<String> list1 = new ArrayList<String>();
         list1=list;
-        for (int i =0; i<list1.size();i++)
-            if((list1.get(i).contains("р") & (list1.get(i).contains("л"))
+        //for (int i =0; i<list1.size();i++)
+           // if((list1.get(i).contains("р") & (list1.get(i).contains("л"))
                     
 
 
