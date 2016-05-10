@@ -1,6 +1,10 @@
 package com.javarush.test.level08.lesson08.task05;
 
 import java.util.HashMap;
+<<<<<<< Updated upstream
+=======
+import java.util.Iterator;
+>>>>>>> Stashed changes
 import java.util.Map;
 
 /* Удалить людей, имеющих одинаковые имена
@@ -13,6 +17,7 @@ public class Solution
     public static HashMap<String, String> createMap()
     {
         //напишите тут ваш код
+<<<<<<< Updated upstream
         Map<String,String> map= new HashMap<>();
         map.put("Ivanon1","Ivan1");
         map.put("Ivanon2","Ivan");
@@ -28,12 +33,40 @@ public class Solution
         return (HashMap<String, String>) map;
 
 
+=======
+        HashMap<String,String> map=new HashMap<String, String>();
+        map.put("chaschin","dmitro");
+        map.put("norris","chak");
+        map.put("lee","brus");
+        map.put("villis","brus");
+        map.put("solunskiy","dmitro");
+        map.put("porox","petya");
+        map.put("yanik","vitya");
+        map.put("avakov","arsen");
+        map.put("chan","jekki");
+        map.put("ivanov","ivan");
+        return map;
+>>>>>>> Stashed changes
 
     }
 
     public static void removeTheFirstNameDuplicates(HashMap<String, String> map)
     {
         //напишите тут ваш код
+<<<<<<< Updated upstream
+=======
+        String name;
+
+        Iterator<Map.Entry<String, String>> iterator=map.entrySet().iterator();
+        while (iterator.hasNext()){
+            name=iterator.next().getValue();
+            removeItemFromMapByValue(map,name);
+        }
+
+
+
+
+>>>>>>> Stashed changes
 
     }
 
