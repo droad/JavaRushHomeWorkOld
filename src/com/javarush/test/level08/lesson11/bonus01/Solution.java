@@ -16,24 +16,32 @@ public class Solution
     {
         //напишите тут ваш код
         Map<Integer,String> map = new HashMap<>();
-        map.put(1,"Jun");
-        map.put(2,"Feb");
-        map.put(3,"Mar");
-        map.put(4,"Apr");
+        map.put(1,"\n" +
+                "January");
+        map.put(2,"February");
+        map.put(3,"March");
+        map.put(4,"April");
         map.put(5,"May");
-        map.put(6,"Juny");
+        map.put(6,"June");
         map.put(7,"July");
-        map.put(8,"Aug");
-        map.put(9,"Sept");
-        map.put(10,"Oct");
-        map.put(11,"Nov");
-        map.put(12,"Dec");
+        map.put(8,"August");
+        map.put(9,"September");
+        map.put(10,"October");
+        map.put(11,"November");
+        map.put(12,"December");
 
         BufferedReader reader=new BufferedReader(new InputStreamReader(System.in));
 
-        int n = Integer.parseInt(reader.readLine());
+        String month =reader.readLine();
+        //int n = Integer.parseInt(reader.readLine());
 
-        Iterator<Integer,String>
+        Iterator<Map.Entry<Integer, String>> iterator= map.entrySet().iterator();
+        while (iterator.hasNext()){
+            Map.Entry<Integer,String> pair=iterator.next();
+            if(month.equals(pair.getValue())){
+                System.out.println(pair.getValue()+" is "+pair.getKey()+" month");
+            }
+        }
     }
 
 }

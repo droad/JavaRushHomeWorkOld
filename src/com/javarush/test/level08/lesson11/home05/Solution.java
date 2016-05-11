@@ -33,6 +33,7 @@ public class Solution
             result.append(array[i]).append(" ");
         }
         System.out.println(result.toString().trim());
+
     }
 
 
