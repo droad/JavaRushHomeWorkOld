@@ -14,18 +14,17 @@ public class Solution
     public static HashMap<String, String> createMap()
     {
         //напишите тут ваш код
-        Map<String,String> map= new HashMap<>();
-        map.put("Ivanon1","Ivan1");
-        map.put("Ivanon2","Ivan");
-        map.put("Ivanon3","Ivan2");
-        map.put("Ivanon4","Ivan");
-        map.put("Ivanon5","Ivan3");
-        map.put("Ivanon6","Ivan");
-        map.put("Ivanon7","Ivan4");
-        map.put("Ivanon8","Ivan");
-        map.put("Ivanon9","Ivan5");
-        map.put("Ivanon10","Ivan");
-
+        Map<String,String> map = new HashMap<>();
+        map.put("Ivanov","Ivan1");
+        map.put("Ivanov","Ivan2");
+        map.put("Ivanov","Ivan3");
+        map.put("Ivanov","Ivan4");
+        map.put("Ivanov","Ivan5");
+        map.put("Ivanov","Ivan");
+        map.put("Ivanov","Ivan7");
+        map.put("Ivanov","Ivan7");
+        map.put("Ivanov","Ivan");
+        map.put("Ivanov","Ivan9");
         return (HashMap<String, String>) map;
 
     }
@@ -33,15 +32,15 @@ public class Solution
     public static void removeTheFirstNameDuplicates(HashMap<String, String> map)
     {
         //напишите тут ваш код
-        String name;
+        String value = "Ivan";
 
-        Iterator<Map.Entry<String, String>> iterator = map.entrySet().iterator();
-        while (iterator.hasNext())
-        {
-            name = iterator.next().getValue();
-            removeItemFromMapByValue(map, name);
-
+        Iterator<Map.Entry<String,String>> iterator = map.entrySet().iterator();
+        while (iterator.hasNext()){
+            removeItemFromMapByValue(map,value);
         }
+
+
+
     }
 
     public static void removeItemFromMapByValue(HashMap<String, String> map, String value)
