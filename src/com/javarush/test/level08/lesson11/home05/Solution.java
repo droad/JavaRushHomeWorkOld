@@ -20,20 +20,25 @@ public class Solution
 {
     public static void main(String[] args) throws IOException
     {
-        BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
-        String s = reader.readLine();
+
 
         //напишите тут ваш код
-        String[] array =s.split(" ");
-        StringBuffer result = new StringBuffer();
-        for(int i = 0; i<array.length;i++){
-            char[] stringArray = array[i].toCharArray();
-            stringArray[0]=Character.toUpperCase(stringArray[0]);
-            array[i]=new String(stringArray);
-            result.append(array[i]).append(" ");
-        }
-        System.out.println(result.toString().trim());
+        {
+            BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
+            String s = reader.readLine();
 
+            //напишите тут ваш код
+            String[] array =s.split(" ");
+            StringBuffer result = new StringBuffer();
+            for(int i = 0; i<array.length;i++){
+                char[] stringArray = array[i].toCharArray();
+                stringArray[0]=Character.toUpperCase(stringArray[0]);
+                array[i]=new String(stringArray);
+                result.append(array[i]).append(" ");
+            }
+            System.out.println(result.toString().trim());
+
+        }
     }
 
 
