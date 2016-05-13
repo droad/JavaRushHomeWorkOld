@@ -1,7 +1,6 @@
 package com.javarush.test.level08.lesson08.task05;
 
 import java.util.HashMap;
-import java.util.Iterator;
 import java.util.Map;
 
 /* Удалить людей, имеющих одинаковые имена
@@ -15,31 +14,22 @@ public class Solution
     {
         //напишите тут ваш код
         Map<String,String> map = new HashMap<>();
+        map.put("Ivanov","Ivan");
         map.put("Ivanov","Ivan1");
-        map.put("Ivanov","Ivan2");
         map.put("Ivanov","Ivan3");
         map.put("Ivanov","Ivan4");
         map.put("Ivanov","Ivan5");
         map.put("Ivanov","Ivan");
-        map.put("Ivanov","Ivan7");
-        map.put("Ivanov","Ivan7");
         map.put("Ivanov","Ivan");
-        map.put("Ivanov","Ivan9");
+        map.put("Ivanov","Ivan");
+        map.put("Ivanov","Ivan5");
+        map.put("Ivanov","Ivan");
         return (HashMap<String, String>) map;
-
     }
 
     public static void removeTheFirstNameDuplicates(HashMap<String, String> map)
     {
         //напишите тут ваш код
-        String value = "Ivan";
-
-        Iterator<Map.Entry<String,String>> iterator = map.entrySet().iterator();
-        while (iterator.hasNext()){
-            removeItemFromMapByValue(map,value);
-        }
-
-
 
     }
 
