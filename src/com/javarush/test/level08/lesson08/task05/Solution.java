@@ -13,18 +13,11 @@ public class Solution
     public static HashMap<String, String> createMap()
     {
         //напишите тут ваш код
-        Map<String,String> map = new HashMap<>();
-        map.put("Ivanov","Ivan");
-        map.put("Ivanov","Ivan1");
-        map.put("Ivanov","Ivan3");
-        map.put("Ivanov","Ivan4");
-        map.put("Ivanov","Ivan5");
-        map.put("Ivanov","Ivan");
-        map.put("Ivanov","Ivan");
-        map.put("Ivanov","Ivan");
-        map.put("Ivanov","Ivan5");
-        map.put("Ivanov","Ivan");
+        Map<String, String> map = new HashMap<>();
+        map.put("Ivanov", "Ivan");
         return (HashMap<String, String>) map;
+
+
     }
 
     public static void removeTheFirstNameDuplicates(HashMap<String, String> map)
