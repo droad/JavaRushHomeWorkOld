@@ -15,6 +15,16 @@ public class Solution
         //напишите тут ваш код
         Map<String, String> map = new HashMap<>();
         map.put("Ivanov", "Ivan");
+        map.put("Ivanov", "Ivan");
+        map.put("Ivanov", "Ivan");
+        map.put("Ivanov", "Ivan");
+        map.put("Ivanov", "Ivan");
+        map.put("Ivanov", "Ivan");
+        map.put("Ivanov", "Ivan");
+        map.put("Ivanov", "Ivan");
+        map.put("Ivanov", "Ivan");
+        map.put("Ivanov", "Ivan");
+
         return (HashMap<String, String>) map;
 
 
