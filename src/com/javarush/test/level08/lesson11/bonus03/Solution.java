@@ -29,6 +29,7 @@ public class Solution
     public static void sort(String[] array)
     {
         //напишите тут ваш код
+
     }
 
     //Метод для сравнения строк: 'а' больше чем 'b'
