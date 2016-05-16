@@ -29,6 +29,19 @@ public class Solution
     public static void sort(String[] array)
     {
         //напишите тут ваш код
+        String tmp;
+        for (int i = 0; i < array.length; i++)
+        {
+            for (int j =i+1; j < array.length; j++)
+            {
+                if(isGreaterThan(array[i],array[j])){
+                    tmp=array[j];
+                    array[j]=array[i];
+                    array[i]=tmp;
+                }
+            }
+
+        }
 
     }
 
