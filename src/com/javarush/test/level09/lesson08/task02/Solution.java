@@ -23,9 +23,7 @@ public class Solution
         catch (Exception e){
             System.out.println(e);
         }
-        catch (Exception1 e){
 
-        }
 
 
 
