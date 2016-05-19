@@ -17,8 +17,15 @@ public class Solution
     public static void main(String[] args) throws Exception
     {
         //напишите тут ваш код
-
-        method1();
+        try{
+            method1();
+        }
+        catch (NullPointerException e){
+            System.out.println(e);
+        }
+        catch (FileNotFoundException e){
+            System.out.println(e);
+        }
 
         //напишите тут ваш код
 
