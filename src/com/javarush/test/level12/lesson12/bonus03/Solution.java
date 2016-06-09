@@ -24,8 +24,22 @@ public class Solution
         }
 
         //Напишите тут ваше решение
+        int n = array[0];
+        for (int i = 1;i<array.length;i++)
+        {
+            if(array[i]<n)
+            {
+                n=array[i];
+            }
+        }
+        int m=0;
+        for (int i=0;i<array.length;i++)
+            if (n==array[i])
+                m=i;
 
-        return new Pair<Integer, Integer>(0, 0);
+
+        return new Pair<Integer, Integer>(n, m);
+
     }
 
 
