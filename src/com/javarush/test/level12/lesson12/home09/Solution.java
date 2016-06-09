@@ -19,10 +19,21 @@ public class Solution
         public void workHard();
     }
 
-    public static class CTO  implements Businessman
+    public static class CTO extends Man
     {
 
     }
+
+    public static class Man implements Businessman
+    {
+
+        @Override
+        public void workHard()
+        {
+
+        }
+    }
+
 
 
 }
