@@ -33,7 +33,7 @@ public class Solution
         @Override
         public String getWeatherType()
         {
-            return null;
+            return this.type;
         }
     }
 }
